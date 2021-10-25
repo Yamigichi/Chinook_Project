@@ -1,0 +1,33 @@
+Question 1:
+Use your query to return the email, first name, last name, and Genre of all Rock Music listeners. 
+Return your list ordered alphabetically by email address starting with A.
+
+I chose to link information from the Customer, Invoice, InvoiceLine, Track, and Genre tables, 
+but you may be able to find another way to get at the information.
+
+Check Your Solution
+From my query, I found that all of the customers have a connection to Rock music (you could see this by looking at the original length of the customers table). 
+Your final table should have 59 rows and 4 columns (if you want to check the connection to 'Rock' music). The header of this table is provided below.
+
+___________________________________________________
+Question 2: 
+
+Who is writing the rock music?
+Now that we know that our customers love rock music, we can decide which musicians to invite to play at the concert.
+
+Let's invite the artists who have written the most rock music in our dataset. 
+Write a query that returns the Artist name and total track count of the top 10 rock bands.
+
+You will need to use the Genre, Track , Album, and Artist tables.
+_____________________________________________________
+
+Question 3:
+
+First, find which artist has earned the most according to the InvoiceLines?
+
+Now use this artist to find which customer spent the most on this artist.
+
+For this query, you will need to use the Invoice, InvoiceLine, Track, Customer, Album, and Artist tables.
+
+Notice, this one is tricky because the Total spent in the Invoice table might not be on a single product, 
+so you need to use the InvoiceLine table to find out how many of each product was purchased, and then multiply this by the price for each artist.
